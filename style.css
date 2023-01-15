@@ -125,6 +125,7 @@ body {
     .com-mobile {
         display: block;
     }
+
 }
 
 @media (min-width: 560px) {
@@ -294,6 +295,7 @@ body {
     z-index: -1;
     width: 100%;
 }
+
 .competency {
     max-width: 100%;
     height: 1200px;
@@ -325,3 +327,4 @@ body {
 .text-com {
     width: 500px;
 }
+
