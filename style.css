@@ -20,6 +20,73 @@ body {
     #mess_good, #mess_error{
         display: none;
     }
+    .mobile-menu {
+        display: block;
+    }
+    #overlay_btn {
+        display: none;
+    }
+    .menu_info {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_2 {
+        flex-direction: column;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .exp_menu_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .exp_menu {
+        display: none;
+    }
+    .exp_new {
+        margin-top: 15px;
+        padding: 0;
+        width: 250px;
+        height: fit-content;
+    }
+    .exp-with-lap-mobile-info {
+        width:auto;
+    }
+    .exp-with-lap-mobile{
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .exp-drupal {
+        display: block;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        height: 1100px;
+        background: linear-gradient(to bottom right, rgb(4,6,19), rgb(29,31,43));
+    }
+    .exp-with-lap {
+        display: none;
+    }
+    .exp {
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+        width: 150px;
+    }
+    #exp_1_m, #exp_3_m, #exp_5_m {
+        margin-right: 15px;
+    }
+    .fullscreen-bg__video {
+        height: 100%;
+        width: auto;
+    }
 }
 
 @media (min-width: 560px) {
@@ -53,4 +120,139 @@ body {
         border:solid 1px rgb(38, 0, 255);
         border-radius: 15px;
     }
+    .exp-drupal {
+        width: 100%;
+        height: 1500px;
+        background: linear-gradient(to bottom right, rgb(4,6,19), rgb(29,31,43));
+        margin-bottom: 150px;
+    }
+}
+.menu {
+    display: flex;
+    width: 94%;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.poz-mobile {
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-bottom: .5px solid rgb(146, 145, 145);
+}
+.click-menu-mobile {
+    height: 470px;
+    display: none;
+    overflow: scroll;
+}
+.mobile-menu {
+    background-color: black;
+    width: 100%;
+    font-size: 15px;
+    height: auto; 
+    color: white;
+    display: none;
+}  
+#Drupal {
+    margin-top: -2vh;
+}
+#Drupal, #sup-drupal, #Admin, #Prodvig, #Advertise, #About, #Projects {
+    margin-right: 2vh;
+    transition: all .25s;
+}
+#Drupal:hover, #sup-drupal:hover, #Prodvig:hover, #Advertise:hover, #Projects:hover, #Contacts:hover {
+    text-decoration: underline 5px rgb(241,77,52);
+
+}
+#Admin-menu-mobile {
+    display: none;
+    padding-left: 30px;
+}
+#Admin-menu, #About-menu {
+    background: rgb(241,77,52);
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    display: none;
+}
+.Admin-menu, .About-menu {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    max-width:100%;
+}
+.Admin-menu:hover, .About-menu:hover {
+    background: rgb(209, 48, 24);
+    text-decoration: none;
+}
+.fullscreen-bg {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.overlay > * {
+    margin-left: 6%;
+}
+.menu_2 {
+    display: flex;
+    margin-top: 50px;
+}
+.exp_menu {
+    margin-left: 5%;
+    margin-top: -50px;
+}
+.exp_menu_mobile {
+    display: none;
+}
+.exp {
+    border-left: 5px solid rgb(241,77,52);
+    width: 150px;
+    margin-right: 100px;
+    margin-top: 100px;
+    padding-left: 15px; 
+}
+.exp_new{
+    border-left: 5px solid rgb(241,77,52);
+    width: 150px;
+    margin-right: 100px;
+    margin-top: 100px;
+    padding-left: 15px; 
+    color: rgb(89, 106, 130);
+    overflow: hidden;
+	word-wrap: break-word;
+	height: 50%;
+}
+#exp_2, #exp_3 {
+    padding-top: 27px;
+}
+.exp-with-lap {
+    display: flex;
+    height: 50%;
+}
+.exp-with-lap-mobile {
+    display: none;
+}
+.exp_menu_mobile {
+    display: none;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
 }
