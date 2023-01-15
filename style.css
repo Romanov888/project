@@ -141,7 +141,6 @@ body {
         height: auto;
         margin: auto;
     }
-
 }
 
 @media (min-width: 560px) {
@@ -346,6 +345,7 @@ body {
 .text-com {
     width: 500px;
 }
+
 .pod-drupal-flex {
     display: flex;
     flex-direction: column;
@@ -445,3 +445,4 @@ body {
 .List li::before{
     content: url(img/ok.png);
 }
+
