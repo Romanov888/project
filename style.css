@@ -141,15 +141,10 @@ body {
         height: auto;
         margin: auto;
     }
-    #Rate {
-        display: none;
-    }
-
     #Rate_mob{
         width: 100%;
         height: auto;
     }
-
 }
 
 @media (min-width: 560px) {
