@@ -228,6 +228,29 @@ body {
         display: none;
     }
 
+    #Razrab{
+        margin: auto;
+        width: 900px; 
+        height: 400px;
+    }
+
+    #Razrab h1{
+        padding-left: 35px;
+        margin-bottom: 40px;
+    }
+    
+    #Quality{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .Quality_elem{
+        width: 300px;
+    }
+
+    
+
 }
 .menu {
     display: flex;
