@@ -229,6 +229,45 @@ body {
     .name_razrab{
         font-size: 14px;
     }
+    #Case {
+        width: 90vw;
+        margin: auto;
+    }
+
+    #Case_one_1 div, #Case_two_3 div{
+        font-size: 12px;
+        margin-left: 10px; 
+        width: calc(100% - 10px); 
+        margin-top: 15px;
+        line-height: 13px;
+        margin-bottom: 20px;
+    }
+
+    .br_1{
+        display: none;
+    }
+
+    #Case h1{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #Case img{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height: 30vh;
+        margin-bottom: 15px;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        height: 57vh;
+        margin-bottom: 15px;
+    }
 
 
 }
@@ -349,10 +388,96 @@ body {
     .Team_elem div{
         width: 230px;
     }
-    
-    .name_razrab{
-        font-size: 20px;
+
+    #Case{
+        width: 860px; 
+        height: 700px; 
+        margin: auto; 
+        text-align: center; 
+        margin-bottom: 70px;
     }
+
+    #Case_two_3 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_two{
+        width: 100%; 
+        height: 49%;
+        margin: auto;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        width: 100%; 
+        height: 100%;
+    }
+
+    #Case_two_3{
+        width: 100%;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height:100%;
+    }
+
+    .br_2{
+        display: none;
+    }
+
+    #Case_one_1 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_one{
+        width: 100%; 
+        height: 49%; 
+        margin: auto; 
+        margin-bottom: 1%;
+    }
+
+    #Case h1{
+        margin-bottom: 45px;
+    }
+
+    #Case div {
+        margin-left: 5px;
+    }
+
+    #Case_one, #Case_two{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Case_one_1 {
+        flex: 1;
+        border-radius: 5px 5px;
+    }
+
+    #Case_one_2 {
+        flex: 2;
+    }
+
+    #Case_two_3 img{
+        width: 100%;
+    }
+
+    #Case_two_1, #Case_two_2, #Case_two_3 {
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+    }
+
 
 }
 .menu {
