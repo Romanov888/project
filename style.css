@@ -146,6 +146,237 @@ body {
         width: 100%;
         height: auto;
     }
+    #Razrab{
+        width: 100%;
+        font-size: 10px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    #Razrab br{
+        display: none;
+    }
+    .raz_text{
+        font-size: 13px;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    #Razrab h1{
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    #Razrab h1 br{
+        display: none;
+    }
+
+    #Quality{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .Quality_elem{
+        margin: auto;
+        width: 50vw;
+    }
+
+    #Team{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #Team button{
+        height: 30px; 
+        width: 35vw;
+        font-size: 10px;
+        font-weight: 700;
+        color: rgb(81, 80, 80);
+        vertical-align: middle;
+    }
+
+    .br_team_2{
+        display: none;
+    }
+
+
+    .Team_elem p{
+        margin-bottom: 0px;
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+    #Team h1{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #Team img{
+        width: 100%;
+    }
+
+    #Team_flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Team_elem{
+        width: 39vw;
+    }
+    .name_razrab{
+        font-size: 14px;
+    }
+    #Case {
+        width: 90vw;
+        margin: auto;
+    }
+
+    #Case_one_1 div, #Case_two_3 div{
+        font-size: 12px;
+        margin-left: 10px; 
+        width: calc(100% - 10px); 
+        margin-top: 15px;
+        line-height: 13px;
+        margin-bottom: 20px;
+    }
+
+    .br_1{
+        display: none;
+    }
+
+    #Case h1{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #Case img{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height: 30vh;
+        margin-bottom: 15px;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        height: 57vh;
+        margin-bottom: 15px;
+    }
+    #Reviews {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 30px;
+        height: 150px;
+        background: url(img/right-quote-sign.svg) no-repeat left top;
+        background-size: 30%;
+    }
+
+    #slider_three p {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgb(120, 120, 120);
+    }
+
+    #Reviews h1 {
+        font-size: 22px;
+    }
+
+    #Prev_Next {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #numb {
+        margin-left: 10px;
+    }
+
+    #next {
+        padding-left: 0px;
+    }
+
+    #Prev_Next div img {
+        width: 20px;
+    }
+
+    #Prev_Next button {
+        width: 20px;
+    }
+
+    #slider_three div {
+        width: 85%;
+        margin: auto;
+    }
+
+    #_3 {
+        text-align: center;
+    }
+
+    #_1 {
+        width: 76vw;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.1;
+        border: 1px solid rgb(169, 169, 169);
+    }
+
+    #_2 {
+        width: 83vw;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.6;
+        border: 1px solid rgb(224, 223, 223);
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 70px;
+        padding-top: 30px;
+        width: 90vw;
+        height: auto;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid rgb(224, 223, 223);
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        box-shadow: 0 0 50px 0 rgb(146, 145, 145);
+    }
+
+    #prev {
+        padding-left: 0px;
+    }
+
+    #Com_1 img {
+        width: 27%;
+        margin-bottom: 20px;
+        padding-right: 73%;
+    }
+
+    #Com_1 br {
+        display: none;
+    }
+
 
 }
 
@@ -193,6 +424,247 @@ body {
     #Rate_mob{
         display: none;
     }
+
+    #Razrab{
+        margin: auto;
+        width: 900px; 
+        height: 400px;
+    }
+
+    #Razrab h1{
+        padding-left: 35px;
+        margin-bottom: 40px;
+    }
+
+    #Quality{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .Quality_elem{
+        width: 300px;
+    }
+
+
+    #Team_flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    #Team button{
+        height: 50px; 
+        width: 150px;
+    }
+
+    .Team_elem {
+        text-align: center;
+    }
+    .name_razrab{
+        font-size: 20px;
+    }
+
+    .Team_elem p{
+        font-size: 14px;
+    }
+
+    #Team_flex div img{
+        width: 230px;
+        height: 235px;
+    }
+
+    #Team{
+        height: 800px; 
+        margin-bottom: 200px;
+    }
+
+    #Team h1{
+        margin-bottom: 60px;
+    }
+
+    #Team_flex{
+        width: 900px;
+    }
+
+    .Team_elem{
+        width: 300px; 
+        margin-bottom: 35px;
+    }
+
+    .Team_elem div{
+        width: 230px;
+    }
+
+    #Case{
+        width: 860px; 
+        height: 700px; 
+        margin: auto; 
+        text-align: center; 
+        margin-bottom: 70px;
+    }
+
+    #Case_two_3 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_two{
+        width: 100%; 
+        height: 49%;
+        margin: auto;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        width: 100%; 
+        height: 100%;
+    }
+
+    #Case_two_3{
+        width: 100%;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height:100%;
+    }
+
+    .br_2{
+        display: none;
+    }
+
+    #Case_one_1 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_one{
+        width: 100%; 
+        height: 49%; 
+        margin: auto; 
+        margin-bottom: 1%;
+    }
+
+    #Case h1{
+        margin-bottom: 45px;
+    }
+
+    #Case div {
+        margin-left: 5px;
+    }
+
+    #Case_one, #Case_two{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Case_one_1 {
+        flex: 1;
+        border-radius: 5px 5px;
+    }
+
+    #Case_one_2 {
+        flex: 2;
+    }
+
+    #Case_two_3 img{
+        width: 100%;
+    }
+
+    #Case_two_1, #Case_two_2, #Case_two_3 {
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+    }
+
+    #Reviews h1 {
+        font-size: 40px;
+    }
+
+    #Prev_Next {
+        width: 250px;
+        margin-right: 8%;
+        margin-bottom: 50px;
+    }
+
+    #Prev_Next div {
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #_3 {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    #_1 {
+        width: 600px;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 203px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.2;
+        border: 1px solid black;
+    }
+
+    #_2 {
+        width: 700px;
+        height: 45px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 230px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.4;
+        border: 1px solid black;
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 260px;
+        padding-top: 50px;
+        width: 800px;
+        height: 530px;
+        box-shadow: 0 0 50px rgb(69, 68, 68);
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #slider_three {
+        height: 500px;
+        width: 480px;
+        background: rgb(255, 255, 255);
+        margin-left: 8%;
+        margin-bottom: 50px;
+        border-right: 1px solid rgb(71, 71, 71);
+    }
+
+    #slider_three div {
+        font-size: 14px;
+    }
+
 
 }
 .menu {
