@@ -20,8 +20,8 @@
 
 <body>
 
-    <span class="FormOverlay"><!-- Затемняющий оверлей с формой. Вызывается по нажатии на кнопку -->
-        <div id="form-overlay"><!-- Форма -->
+    <span class="FormOverlay">
+        <div id="form-overlay">
             <h1 style="text-align: center; font-size: 22px; margin-top: 15px; color: white; margin-bottom: 20px;">
                 Заполните форму</h1>
             <form name="form-overlay" id="app" @submit="checkForm" action="https://formcarry.com/s/q658vtPcl"
@@ -31,7 +31,6 @@
                     <b>Пожалуйста исправьте указанные ошибки:</b>
                 <ul style="color: rgb(75, 93, 252); margin-top: 0px;">
                     <li v-for="error in errors" style="margin-bottom: 0px;">{{ error }}</li>
-                    <!--Ошибки при вводе данных в форму-->
                 </ul>
                 </p>
                 <p id="mess_good" style="color: greenyellow; text-align: center;">Ваше сообщение удачно отправлено!</p>
@@ -40,29 +39,37 @@
 
                 <p style="margin-bottom: 0px; margin-top: 0px;">
                     <input id="form_2_name" type="text" name="name" v-model="name" placeholder="Ваше имя" maxlength="35"
-                        style="width: calc(25vw - 40px); font-size: 17px; padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; height: 36px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
+                        style="width: calc(25vw - 40px);
+               font-size: 17px; padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px;
+                line-height: 1.2; height: 36px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
                 </p>
 
                 <p style="margin-top: 0px; margin-bottom: 0px;">
                     <input id="number_polz" type="text" name="number" v-model="number" placeholder="Телефон"
                         maxlength="15"
-                        style="width: calc(25vw - 40px); font-size: 17px; padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; height: 36px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
+                        style="width: calc(25vw - 40px);
+               font-size: 17px; padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2;
+                height: 36px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
                 </p>
 
                 <p style="margin-top: 0px; margin-bottom: 0px;">
-                    <input id="email_polz" type="email" name="email" v-model="email" placeholder="E-mail"
-                        style="width: calc(25vw - 40px); font-size: 17px; padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; height: 36px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
+                    <input id="email_polz" type="email" name="email" v-model="email" placeholder="E-mail" style="width: calc(25vw - 40px); font-size: 17px;
+               padding: 5px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; height: 36px;
+                background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
                 </p>
 
                 <p style="margin-top: 0px; margin-bottom: 0px;">
                     <textarea id="message_polz" name="message" v-model="message" placeholder="Ваш коментарий"
-                        style="width: calc(25vw - 40px); font-size: 18px; padding: 15px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; height: 150px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3); resize: none;"></textarea>
+                        style="width: calc(25vw - 40px);
+               font-size: 18px; padding: 15px 20px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2;
+                height: 150px; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3); resize: none;"></textarea>
                 </p>
 
                 <div style="display: flex; flex-direction: row; font-size: 13px;">
                     <div style="margin-right: 5px;">
-                        <input id="checkbox_polz" type="checkbox" v-model="checkbox" name="checkbox"
-                            style="vertical-align: top; height: 20px; width: 20px; font-size: 17px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2; background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
+                        <input id="checkbox_polz" type="checkbox" v-model="checkbox" name="checkbox" style="vertical-align: top; height: 20px;
+                   width: 20px; font-size: 17px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; line-height: 1.2;
+                    background-color: rgb(121, 135,146,0); color: white; border: 1px solid rgba(256, 256, 256, 0.3);">
                     </div>
                     <div>
                         <label style="color: rgb(121, 135,146); width: 200px;"> Отправляя заявку, я даю согласие на <a
@@ -72,7 +79,8 @@
 
                 <p style="text-align: center;">
                     <input id="Lete" type="submit" value="Отправить"
-                        style="background-color: rgb(241, 77,52); color: white; width: 25vw; font-size: 17px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; border: 1px solid rgba(256, 256, 256, 0.3);">
+                        style="background-color: rgb(241, 77,52); color: white; width: 25vw;
+               font-size: 17px; margin-bottom: 7px; border: 1px solid rgba(256, 256, 256, 0.3); border-radius: 5px; border: 1px solid rgba(256, 256, 256, 0.3);">
                 </p>
             </form>
         </div>
@@ -246,7 +254,6 @@
         </video>
     </header>
 
-
     <div class="competency">
         <div class="content_wid">
             <div class="text-com">
@@ -322,6 +329,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <div class="exp-drupal">
         <div class="pod-drupal-flex" style="height: 50%;">
@@ -601,6 +611,7 @@
 
         <div class="ui-card_new"
             style="background: white; border: 1px solid rgb(205, 204, 204);  border-radius: 2px; margin-bottom: 25px;">
+            <!--Этот div содержит в себе окно бизнес тарифа-->
             <div
                 style="padding: 40px; padding-bottom: 0px; padding-left: 0px; font-size: 10px; border-bottom: 2px solid rgb(175, 164, 164); width: 75%; margin: auto; color: rgb(241, 77,52);">
                 <h1>Бизнес</h1>
@@ -631,6 +642,7 @@
 
         <div class="ui-card_new"
             style="background: white; border: 1px solid rgb(205, 204, 204);  border-radius: 2px; margin-bottom: 25px;">
+            <!--Этот div содержит в себе окно VIP тарифа-->
             <div
                 style="padding: 40px; padding-bottom: 0px; padding-left: 0px; font-size: 10px; border-bottom: 2px solid rgb(175, 164, 164); width: 75%; margin: auto; color: rgb(241, 77,52);">
                 <h1>VIP</h1>
