@@ -268,6 +268,114 @@ body {
         height: 57vh;
         margin-bottom: 15px;
     }
+    #Reviews {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 30px;
+        height: 150px;
+        background: url(img/right-quote-sign.svg) no-repeat left top;
+        background-size: 30%;
+    }
+
+    #slider_three p {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgb(120, 120, 120);
+    }
+
+    #Reviews h1 {
+        font-size: 22px;
+    }
+
+    #Prev_Next {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #numb {
+        margin-left: 10px;
+    }
+
+    #next {
+        padding-left: 0px;
+    }
+
+    #Prev_Next div img {
+        width: 20px;
+    }
+
+    #Prev_Next button {
+        width: 20px;
+    }
+
+    #slider_three div {
+        width: 85%;
+        margin: auto;
+    }
+
+    #_3 {
+        text-align: center;
+    }
+
+    #_1 {
+        width: 76vw;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.1;
+        border: 1px solid rgb(169, 169, 169);
+    }
+
+    #_2 {
+        width: 83vw;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.6;
+        border: 1px solid rgb(224, 223, 223);
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 70px;
+        padding-top: 30px;
+        width: 90vw;
+        height: auto;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid rgb(224, 223, 223);
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        box-shadow: 0 0 50px 0 rgb(146, 145, 145);
+    }
+
+    #prev {
+        padding-left: 0px;
+    }
+
+    #Com_1 img {
+        width: 27%;
+        margin-bottom: 20px;
+        padding-right: 73%;
+    }
+
+    #Com_1 br {
+        display: none;
+    }
 
 
 }
@@ -476,6 +584,85 @@ body {
         margin: 0px;
         padding: 0px;
         flex: 1;
+    }
+
+    #Reviews h1 {
+        font-size: 40px;
+    }
+
+    #Prev_Next {
+        width: 250px;
+        margin-right: 8%;
+        margin-bottom: 50px;
+    }
+
+    #Prev_Next div {
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #_3 {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    #_1 {
+        width: 600px;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 203px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.2;
+        border: 1px solid black;
+    }
+
+    #_2 {
+        width: 700px;
+        height: 45px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 230px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.4;
+        border: 1px solid black;
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 260px;
+        padding-top: 50px;
+        width: 800px;
+        height: 530px;
+        box-shadow: 0 0 50px rgb(69, 68, 68);
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #slider_three {
+        height: 500px;
+        width: 480px;
+        background: rgb(255, 255, 255);
+        margin-left: 8%;
+        margin-bottom: 50px;
+        border-right: 1px solid rgb(71, 71, 71);
+    }
+
+    #slider_three div {
+        font-size: 14px;
     }
 
 
