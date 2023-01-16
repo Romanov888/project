@@ -141,10 +141,12 @@ body {
         height: auto;
         margin: auto;
     }
+
     #Rate_mob{
         width: 100%;
         height: auto;
     }
+
 }
 
 @media (min-width: 560px) {
@@ -187,9 +189,11 @@ body {
     .pod-drupal-flex > h1 {
         font-size: 50px;
     }
+
     #Rate_mob{
         display: none;
     }
+
 }
 .menu {
     display: flex;
@@ -452,3 +456,5 @@ body {
 .List li::before{
     content: url(img/ok.png);
 }
+
+
