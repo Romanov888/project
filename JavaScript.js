@@ -55,6 +55,7 @@ function About_mobile() {
     }
 }
 
+
 $(document).ready(function () {  
     var c;
     var a = 0;
@@ -163,3 +164,40 @@ $(document).ready(function () {
 
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var b1;
+    var mm;
+    var adm;
+    var abm;
+    var b = document.getElementById("Admin");
+    b.addEventListener("mouseover", Admin_menu_on);
+    b.addEventListener("mouseleave", Admin_menu_leave);
+    b1 = document.getElementById("About");
+    b1.addEventListener("mouseover", About_menu_on);
+    b1.addEventListener("mouseleave", About_menu_leave);
+    mm = document.getElementById("click-mob-menu");
+    mm.addEventListener("click", Mobile_menu);
+    adm = document.getElementById("Admin-mobile");
+    adm.addEventListener("click", Admin_mobile);
+    abm = document.getElementById("About-mobile");
+    abm.addEventListener("click", About_mobile);
+
+    $("#overlay_btn").click(function () {
+        openForm();
+        
+        animate({
+            duration: 700,
+            timing: function circ(timeFraction) {
+              return 1 - Math.sin(Math.acos(timeFraction));
+            },
+            draw: function(progress) {
+              $(".FormOverlay").css("left", 110-progress*110+"px");
+              $(".FormOverlay").css("bottom", 45-progress*45+"px");
+              $(".FormOverlay").css("width",  progress * 100 + "%");
+              $(".FormOverlay").css("height",  progress * 100 + "%");
+              $("#form-overlay").css("opacity", progress);
+              $("#close_overlay_btn").css("opacity", progress);
+            }
+          });
+    });
+
