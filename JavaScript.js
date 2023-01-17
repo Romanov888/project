@@ -477,3 +477,17 @@ function animate({timing, draw, duration}) {
   
     });
 }
+
+$(document).ready(function(){
+    $("#tarif").click(function() {
+      if (screen.width >= 560) {
+        $("html, body").animate({
+          scrollTop: $("#Rate").offset().top
+        }, 2000);
+      } else {
+        $("html, body").animate({
+          scrollTop: $("#Rate_mob").offset().top
+        }, 2000);
+      }
+    });
+  });
