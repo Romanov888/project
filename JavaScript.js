@@ -55,6 +55,7 @@ function About_mobile() {
     }
 }
 
+
 $(document).ready(function () {  
     var c;
     var a = 0;
