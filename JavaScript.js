@@ -56,6 +56,114 @@ function About_mobile() {
 }
 
 
+$(document).ready(function () {  
+    var c;
+    var a = 0;
+    $("#Reviews").css("padding-bottom", $("#Com_1").height());  
+    $(window).resize(function () {
+        new ResizeSensor(jQuery("#Com_1"), function () {
+            $("#Reviews").css("padding-bottom", $("#Com_1").height());
+        });
+    });
+    $("#faq_id").click(function () {
+        a = a + 1;
+        if (a % 2 !== 0) {
+            $("#faq_id").css("color", "rgb(241, 77,52)");
+            $("#one").css("border", "3px solid rgb(241, 77,52)");
+        } else {
+            $("#faq_id").css("color", "black");
+            $("#one").css("border", "0px");
+        }
+    });
+
+    $("#slider_one").slick({   
+        accessibility: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        slidesToScroll: 1,
+        slidesToShow: 6,
+        variableWidth: true
+    });
+    $("#slider_two").slick({   
+        accessibility: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        dots: false,
+        slidesToScroll: 1,
+        slidesToShow: 6,
+        variableWidth: true
+    });
+    $("#slider_three").slick({ 
+        arrows: true,
+        dots: false,
+        nextArrow: $("#next"),
+        prevArrow: $("#prev"),
+        slidesToScroll: 1,
+        slidesToShow: 1
+    });
+    $("#slider_three").on("afterChange", function (event, slick, currentSlide) { 
+        g = event.type;
+        g1 = slick.type;
+        $("#numb").text("0" + (currentSlide + 1));
+    });
+    $num = $(".ui-card").length;
+    $even = $num / 2;
+    $odd = ($num + 1) / 2;
+    if ($num % 2 === 0) {
+        $(".ui-card:nth-child(" + $even + ")").addClass("active");
+        $(".ui-card:nth-child(" + $even + ")").prev().addClass("prev");
+        $(".ui-card:nth-child(" + $even + ")").next().addClass("next");
+    } else {
+        $(".ui-card:nth-child(" + $odd + ")").addClass("active");
+        $(".ui-card:nth-child(" + $odd + ")").prev().addClass("prev");
+        $(".ui-card:nth-child(" + $odd + ")").next().addClass("next");
+    }
+    c = 1;
+    $(".ui-card").click(function () {
+        $slide = $(".active").width();
+        if ($(this).hasClass("next")) {
+            $(".container").stop(false, true).animate({left: "-=" + $slide});
+            c += 1;
+        } else if ($(this).hasClass("prev")) {
+            $(".container").stop(false, true).animate({left: "+=" + $slide});
+            c -= 1;
+        }
+        if (c === 0) {
+            $("#but_1").css("background", "rgb(241, 77,52)");
+            $("#but_1").css("color", "white");
+            $("#but_2").css("color", "rgb(241, 77,52)");
+            $("#but_2").css("background", "white");
+            $("#but_3").css("color", "rgb(241, 77,52)");
+            $("#but_3").css("background", "white");
+        } else if (c === 1) {
+            $("#but_2").css("background", "rgb(241, 77,52)");
+            $("#but_2").css("color", "white");
+            $("#but_1").css("color", "rgb(241, 77,52)");
+            $("#but_1").css("background", "white");
+            $("#but_3").css("color", "rgb(241, 77,52)");
+            $("#but_3").css("background", "white");
+        } else if (c === 2) {
+            $("#but_3").css("background", "rgb(241, 77,52)");
+            $("#but_3").css("color", "white");
+            $("#but_2").css("color", "rgb(241, 77,52)");
+            $("#but_2").css("background", "white");
+            $("#but_1").css("color", "rgb(241, 77,52)");
+            $("#but_1").css("background", "white");
+        }
+
+        $(this).removeClass("prev next");
+        $(this).siblings().removeClass("prev active next");
+        $(this).addClass("active");
+        $(this).prev().addClass("prev");
+        $(this).next().addClass("next");
+    });
+
+
+});
 document.addEventListener("DOMContentLoaded", function () {
     var b1;
     var mm;
