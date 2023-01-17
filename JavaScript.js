@@ -207,8 +207,8 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             $("#mess_good").css("display", "none");
             $("#mess_error").css("display", "none");
-            openHome();//Изменение URL при открытии формы
-            animate({//Отрисовка плавного появления оверлея с формой
+            openHome();
+            animate({
                 duration: 400,
                 timing: function circ(timeFraction) {
                 return 1 - Math.sin(Math.acos(timeFraction));
@@ -226,3 +226,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+function openForm() {    
+    history.pushState({page: 2}, "Form", "?form");
+    return false;
+}
+
+function openHome() {    
+    history.replaceState({page: 1}, "Home", "?home");
+    return false;
+}
+
+addEventListener("popstate", function () {
+    openHome();
+        $(".FormOverlay").hide(300);
+        $("#form-overlay").hide(300);
+}, false);
