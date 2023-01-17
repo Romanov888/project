@@ -93,4 +93,28 @@ document.addEventListener("DOMContentLoaded", function () {
           });
     });
 
+    $(".FormOverlay").click(function (event) {
+        
+        if((String)(event.target) === "[object HTMLSpanElement]") 
+        {
+            $("#mess_good").css("display", "none");
+            $("#mess_error").css("display", "none");
+            openHome();//Изменение URL при открытии формы
+            animate({//Отрисовка плавного появления оверлея с формой
+                duration: 400,
+                timing: function circ(timeFraction) {
+                return 1 - Math.sin(Math.acos(timeFraction));
+                },
+                draw: function(progress) {
+                $(".FormOverlay").css("left", progress*110+"px");
+                $(".FormOverlay").css("bottom", progress*45+"px");
+                $(".FormOverlay").css("width",  (1- progress) * 100 + "%");
+                $(".FormOverlay").css("height",  (1 - progress) * 100 + "%");
+                $("#form-overlay").css("opacity", 1-progress);
+                $("#close_overlay_btn").css("opacity", 1-progress);
+                }
+            });
+        }
+    });
+
 });
