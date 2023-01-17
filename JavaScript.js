@@ -105,6 +105,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         slidesToShow: 1
     });
+
     $("#slider_three").on("afterChange", function (event, slick, currentSlide) { 
         g = event.type;
         g1 = slick.type;
@@ -161,9 +162,201 @@ $(document).ready(function () {
         $(this).prev().addClass("prev");
         $(this).next().addClass("next");
     });
+    const app = new Vue({   
+        el: '#app',   
+        data: {   
+          errors: [],
+          name: null,
+          number: null,
+          email: null,
+          message: null,
+          checkbox: null
+        },
+        mounted() {      
+            if (localStorage.name) {
+              this.name = localStorage.name;
+            }
+            if(localStorage.number){
+                this.number=localStorage.number;
+            }
+            if(localStorage.email){
+                this.email=localStorage.email;
+            }
+            if(localStorage.message){
+                this.message=localStorage.message;
+            }
+          },
+        watch: {        
+            name(newName) {
+              localStorage.name = newName;
+            },
+            number(newNumber){
+                localStorage.number = newNumber;
+            },
+            email(newEmail){
+                localStorage.email = newEmail;
+            },
+            message(newMessage){
+                localStorage.message = newMessage;
+            }
+        },
+        methods: {   
+          checkForm: function (e) {  
+            $("#mess_good").css("display", "none");
+            $("#mess_error").css("display", "none");
+            this.errors = [];
+      
+            if (!this.name) {  
+              this.errors.push('Требуется указать имя.');
+            }
+            if (!this.number) {
+              this.errors.push('Требуется указать номер.');
+            }
+            if (!this.email) {
+                this.errors.push('Требуется указать email.');
+            }
+            if (!this.message) {
+                this.errors.push('Требуется написать комменатарий.');
+            }
+            if (!this.checkbox) {
+                this.errors.push('Требуется согласие на обработку песрональных данных.');
+            }
+            if(this.errors.length>0){   
+                if(this.errors.length === 1){
+                    $("#form-overlay").css("height", "84vh");
+                    $("#form-overlay").css("top", "8vh");
+                }
+                else if(this.errors.length === 2){
+                    $("#form-overlay").css("height", "88vh");
+                    $("#form-overlay").css("top", "6vh");
+                }
+                else if(this.errors.length === 3){
+                    $("#form-overlay").css("height", "90vh");
+                    $("#form-overlay").css("top", "5vh");
+                }
+                else if(this.errors.length === 4){
+                    $("#form-overlay").css("height", "92vh");
+                    $("#form-overlay").css("top", "4vh");
+                }
+                else if(this.errors.length === 5){
+                    $("#form-overlay").css("height", "94vh");
+                    $("#form-overlay").css("top", "3vh");
+                }
+            }
+            if(this.errors.length === 0){
+                $("#form-overlay").css("height", "70vh");
+                $("#form-overlay").css("top", "15vh");
+            }
+            if (this.name && this.number && this.email  && this.message && this.checkbox) {  
 
+                changeBtn();
+                fetch('https://formcarry.com/s/q658vtPcl', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+                body: JSON.stringify({name: this.name, number: this.number, email: this.email, message: this.message})
+                })
+                .then(function(response){   
+                    console.log(response);
+                    $("#mess_good").css("display", "block");
+                    $("#form-overlay").css("height", "75vh");
+                    $("#form-overlay").css("top", "12vh");
+                    changeBtn();
+                })
+                .catch(function(error){    
+                    console.log(error);
+                    $("#mess_error").css("display", "block");
+                    $("#form-overlay").css("height", "75vh");
+                    $("#form-overlay").css("top", "12vh");
+                    changeBtn();
+                })
+                this.name=""; 
+                this.number="";
+                this.email="";
+                this.message="";
+                this.checkbox=false;
+            } 
+            e.preventDefault();
+          }
+        }
+      });
+
+
+    const Form = new Vue({   
+        el: '#Form_two',
+        data: {   
+          name: null,
+          number: null,
+          email: null,
+          message: null,
+          checkbox: null
+        },
+        mounted() {   
+            if (localStorage.name) {
+              this.name = localStorage.name;
+            }
+            if(localStorage.number){
+                this.number=localStorage.number;
+            }
+            if(localStorage.email){
+                this.email=localStorage.email;
+            }
+            if(localStorage.message){
+                this.message=localStorage.message;
+            }
+          },
+        watch: {   
+            name(newName) {
+              localStorage.name = newName;
+            },
+            number(newNumber){
+                localStorage.number = newNumber;
+            },
+            email(newEmail){
+                localStorage.email = newEmail;
+            },
+            message(newMessage){
+                localStorage.message = newMessage;
+            }
+        },
+        methods: {  
+          checkForm: function (e) { 
+            $("#no_data").css("display", "none");
+            $("#mess_good_1").css("display", "none");
+            $("#mess_error_1").css("display", "none");
+            if(!this.name || !this.number || !this.email || !this.message || !this.checkbox){ 
+                $("#no_data").css("display", "block");
+            }
+            if (this.name && this.number && this.email  && this.message && this.checkbox) {
+                changeBtn_1();
+                $("#no_data").css("display", "none");
+                fetch('https://formcarry.com/s/q658vtPcl', {  
+                method: 'POST',
+                headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+                body: JSON.stringify({name: this.name, number: this.number, email: this.email, message: this.message})
+                })
+                .then(function(response){   
+                    changeBtn_1();
+                    console.log(response);
+                    $("#mess_good_1").css("display", "block");
+                })
+                .catch(function(error){   
+                    changeBtn_1();
+                    console.log(error);
+                    $("#mess_error_1").css("display", "block");
+                })
+                this.name="";    
+                this.number="";
+                this.email="";
+                this.message="";
+                this.checkbox=false;
+            } 
+            e.preventDefault();
+          }
+        }
+      });
 
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     var b1;
     var mm;
