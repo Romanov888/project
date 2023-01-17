@@ -243,3 +243,44 @@ addEventListener("popstate", function () {
         $(".FormOverlay").hide(300);
         $("#form-overlay").hide(300);
 }, false);
+
+function changeBtn() { 
+    if ($("#Lete").css("opacity") != 0.2) {
+        $("#Lete").css("pointer-events", "none");
+        $("#Lete").css("opacity", "0.2"); 
+    } else { 
+        $("#Lete").css("pointer-events", "unset");
+        $("#Lete").css("opacity", "1"); 
+    }
+}
+
+function changeBtn_1() {
+    if ($("#Lete_1").css("opacity") != 0.2) {
+        $("#Lete_1").css("pointer-events", "none");
+        $("#Lete_1").css("opacity", "0.2"); 
+    } else { 
+        $("#Lete_1").css("pointer-events", "unset");
+        $("#Lete_1").css("opacity", "1"); 
+    }
+}
+
+function animate({timing, draw, duration}) {
+
+    let start = performance.now();
+  
+    requestAnimationFrame(function animate(time) {
+
+      let timeFraction = (time - start) / duration;
+      if (timeFraction > 1) timeFraction = 1;
+  
+      
+      let progress = timing(timeFraction);
+  
+      draw(progress); 
+  
+      if (timeFraction < 1) {
+        requestAnimationFrame(animate);
+      }
+  
+    });
+}
