@@ -11,41 +11,28 @@ body {
 } 
 
 @media (max-width: 560px) {
+    #slider_one img,
+    #slider_two img {
+        border: 1px solid black;
+    }
+
     .FormOverlay{
         display: none;
     }
     #form-overlay {
         display: none;
     }
-    #mess_good, #mess_error{
-        display: none;
-    }
     .mobile-menu {
         display: block;
     }
+
     #overlay_btn {
         display: none;
     }
-    .menu_info {
-        text-align: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .menu_2 {
-        flex-direction: column;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
-    .exp_menu_mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .exp_menu {
-        display: none;
+    
+    .pod-drupal-flex > h1 {
+        font-size: 26px;
+        margin-bottom: 35px;
     }
     .exp_new {
         margin-top: 15px;
@@ -74,21 +61,8 @@ body {
     .exp-with-lap {
         display: none;
     }
-    .exp {
-        margin: 0;
-        margin-top: 30px;
-        padding: 0;
-        width: 150px;
-    }
-    #exp_1_m, #exp_3_m, #exp_5_m {
-        margin-right: 15px;
-    }
-    .fullscreen-bg__video {
-        height: 100%;
-        width: auto;
-    }
-    .text-com {
-        width: 270px;
+    .pod-support {
+        width: 300px;
     }
     .competency {
         display: flex;
@@ -96,6 +70,13 @@ body {
         text-align: center;
         height: 3730px;
         padding: 0;
+    }
+    .pod-drupal-flex {
+        transform: translateY(-2600px);
+    }
+    .pod-drupal-flex-img {
+        align-items: center;
+        flex-direction: column;
     }
     .competency_img {
         margin: 0;
@@ -110,42 +91,546 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    #h1_com{
-        font-size: 20px;
-        text-align: left;
-        margin-top: 25px;
-    }
-    #p_new{
-        font-size: 14px;
-        text-align: left;
-    }
-    .com {
-        display: none;
+    .text-com {
+        width: 270px;
     }
     .com-mobile {
         display: block;
     }
-    .pod-drupal-flex > h1 {
-        font-size: 26px;
-        margin-bottom: 35px;
+    .com {
+        display: none;
     }
-    .pod-drupal-flex {
-        transform: translateY(-2600px);
+    .fullscreen-bg__video {
+        height: 100%;
+        width: auto;
     }
-    .pod-drupal-flex-img {
+    .exp_menu_mobile {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+    .exp {
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+        width: 150px;
+    }
+    .exp_menu {
+        display: none;
+    }
+    #exp_1_m, #exp_3_m, #exp_5_m {
+        margin-right: 15px;
+    }
+    .fullscreen-bg {
+        height: 700px;
+    }
+    #tarif {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu_info {
+        text-align: center;
+        align-items: center;
+        display: flex;
         flex-direction: column;
     }
-    .ui-card_new{
-        width: 89vw;
-        height: auto;
-        margin: auto;
+    .menu_2 {
+        flex-direction: column;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: block;
+    }
+
+    #Rate {
+        display: none;
     }
 
     #Rate_mob{
         width: 100%;
         height: auto;
     }
+
+    .ui-card_new{
+        width: 89vw;
+        height: auto;
+        margin: auto;
+    }
+
+    #Razrab{
+        width: 100%;
+        font-size: 10px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    #Razrab br{
+        display: none;
+    }
+
+    .raz_text{
+        font-size: 13px;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    #Razrab h1{
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    #Razrab h1 br{
+        display: none;
+    }
+
+    #Quality{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .Quality_elem{
+        margin: auto;
+        width: 50vw;
+    }
+
+    #Team{
+        width: 85%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #Team button{
+        height: 30px; 
+        width: 35vw;
+        font-size: 10px;
+        font-weight: 700;
+        color: rgb(81, 80, 80);
+        vertical-align: middle;
+    }
+
+    .br_team_2{
+        display: none;
+    }
+
+    .name_razrab{
+        font-size: 14px;
+    }
+
+    .Team_elem p{
+        margin-bottom: 0px;
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+    #Team h1{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #Team img{
+        width: 100%;
+    }
+
+    #Team_flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Team_elem{
+        width: 39vw;
+    }
+
+    #Case {
+        width: 90vw;
+        margin: auto;
+    }
+
+    #Case_one_1 div, #Case_two_3 div{
+        font-size: 12px;
+        margin-left: 10px; 
+        width: calc(100% - 10px); 
+        margin-top: 15px;
+        line-height: 13px;
+        margin-bottom: 20px;
+    }
+
+    .br_1{
+        display: none;
+    }
+
+    #Case h1{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #Case img{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height: 30vh;
+        margin-bottom: 15px;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        height: 57vh;
+        margin-bottom: 15px;
+    }
+
+    #Reviews {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 30px;
+        height: 150px;
+        background: url(img/right-quote-sign.svg) no-repeat left top;
+        background-size: 30%;
+    }
+
+    #slider_three p {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgb(120, 120, 120);
+    }
+
+    #Reviews h1 {
+        font-size: 22px;
+    }
+
+    #Prev_Next {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #numb {
+        margin-left: 10px;
+    }
+
+    #next {
+        padding-left: 0px;
+    }
+
+    #Prev_Next div img {
+        width: 20px;
+    }
+
+    #Prev_Next button {
+        width: 20px;
+    }
+
+    #slider_three div {
+        width: 85%;
+        margin: auto;
+    }
+
+    #_3 {
+        text-align: center;
+    }
+
+    #_1 {
+        width: 76vw;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.1;
+        border: 1px solid rgb(169, 169, 169);
+    }
+
+    #_2 {
+        width: 83vw;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.6;
+        border: 1px solid rgb(224, 223, 223);
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 70px;
+        padding-top: 30px;
+        width: 90vw;
+        height: auto;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid rgb(224, 223, 223);
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        box-shadow: 0 0 50px 0 rgb(146, 145, 145);
+    }
+
+    #prev {
+        padding-left: 0px;
+    }
+
+    #Com_1 img {
+        width: 27%;
+        margin-bottom: 20px;
+        padding-right: 73%;
+    }
+
+    #Com_1 br {
+        display: none;
+    }
+
+    #Sliders_one_and_two {
+        margin-bottom: 70px;
+    }
+
+    #Sliders_one_and_two br {
+        display: none;
+    }
+
+    #Sliders_one_and_two p {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #Sliders_one_and_two h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Photo {
+        width: 35vw;
+        height: 20vw;
+        border-radius: 5px;
+        margin-left: 6px;
+    }
+
+    .Photo2 {
+        width: 35vw;
+        height: 20vw;
+        border-radius: 5px;
+        margin-left: 6px;
+    }
+
+    #slider_two {
+        overflow: hidden;
+        height: auto;
+    }
+
+    #slider_one {
+        height: auto;
+        margin-bottom: 6px;
+        margin-left: calc(-35vw + 15vw - 15px);
+    }
+
+    #FAQ {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #FAQ h1 {
+        font-size: 24px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #FAQ ol {
+        font-size: 14px;
+        padding-left: 8%;
+        padding-right: 8%;
+        width: 84%;
+    }
+
+    #footer {
+        width: 100%;
+        background: url(img/D-flying.svg) no-repeat top center, url(img/D-footer.svg) no-repeat bottom right;
+        background-color: rgb(21, 26, 34);
+        background-size: 35%;
+        color: white;
+        border-top: 1px solid #e5e5e5;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #Label_1 {
+        margin-top: 35px;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    #Messege br {
+        display: none;
+    }
+
+    #Label_1 br {
+        display: block;
+    }
+
+    #Label_2 {
+        margin-top: 30px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    #footer_1 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 15px;
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+        border: 1px solid rgba(256, 256, 256, 0.3);
+        border-radius: 5px;
+        line-height: 1.2;
+        height: 36px;
+        padding: 4px 10px;
+    }
+
+    textarea {
+        width: calc(100% - 20px);
+        height: 20vh;
+        padding: 4px 10px;
+        font-size: 15px;
+    }
+
+    #Messege ul {
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    #Messege li {
+        list-style-type: none;
+    }
+
+    #Number_project {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #Emai_project {
+        font-size: 15px;
+    }
+
+    #img_1 {
+        width: 16px;
+    }
+
+    #img_2 {
+        width: 18px;
+    }
+
+    #Label_3 br {
+        display: none;
+    }
+
+    #Label_3 {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    #Checkbox {
+        margin-right: 5px;
+    }
+
+    #Check {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    #Lete_1  {
+        width: 90vw;
+        font-size: 17px;
+        height: 40px;
+        margin-bottom: 45px;
+    }
+
+    #Project_info {
+        padding-top: 20px;
+        border-top: 1px solid white;
+    }
+
+    #Project_info img {
+        margin-left: 10px;
+        background-color: rgb(241, 77, 52);
+        height: 22px;
+        width: 22px;
+        border-radius: 5px;
+    }
+
+    #Photo_conect {
+        margin-bottom: 5px;
+    }
+
+    #Mes_project {
+        font-size: 12px;
+        margin-top: 0px;
+        width: 90%;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #Mes_project br {
+        display: none;
+    }
+	
+    #h1_com{
+        font-size: 20px;
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    #p_new{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #mess_good, #mess_error{
+        display: none;
+    }
+
+    #mess_good_1, #mess_error_1, #no_data{
+        display: none;
+        width: 90vw;
+    }
+
 
 }
 
@@ -155,7 +640,24 @@ body {
         display: none;
     }
 
+    #mess_good_1, #mess_error_1, #no_data{
+        display: none;
+        width: calc(30vw - 40px);
+    }
 
+    #overlay_btn {
+        z-index: 99;
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        border: solid 1px black;
+        background: rgb(75, 93, 252);
+        color: white;
+        font-size: 20px;
+    }
     .FormOverlay {
         display: flex;
         flex-direction: column;
@@ -174,8 +676,8 @@ body {
         display: inline-block;
         position: absolute;
         z-index: 101;
-        width: 40vw;/*40vw*/
-        height: 70vh;/*70vh*/
+        width: 40vw;
+        height: 70vh;
         background: rgb(28, 30, 32);
         border:solid 1px rgb(38, 0, 255);
         border-radius: 15px;
@@ -186,6 +688,7 @@ body {
         background: linear-gradient(to bottom right, rgb(4,6,19), rgb(29,31,43));
         margin-bottom: 150px;
     }
+
     .pod-drupal-flex > h1 {
         font-size: 50px;
     }
@@ -193,6 +696,463 @@ body {
     #Rate_mob{
         display: none;
     }
+
+    .raz_text{
+        margin-left: 45px; 
+        margin-top: 10px;
+    }
+
+    #padding_elem_2, #padding_elem_1{
+        padding-left: 50px;
+    }
+
+    #Quality{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .Quality_elem{
+        width: 300px;
+    }
+
+    #Razrab{
+        margin: auto;
+        width: 900px; 
+        height: 400px;
+    }
+
+    #Razrab h1{
+        padding-left: 35px;
+        margin-bottom: 40px;
+    }
+
+    #Team_flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    #Team button{
+        height: 50px; 
+        width: 150px;
+    }
+
+    .Team_elem {
+        text-align: center;
+    }
+
+    .name_razrab{
+        font-size: 20px;
+    }
+
+    .Team_elem p{
+        font-size: 14px;
+    }
+
+    #Team_flex div img{
+        width: 230px;
+        height: 235px;
+    }
+
+    #Team{
+        height: 800px; 
+        margin-bottom: 200px;
+    }
+
+    #Team h1{
+        margin-bottom: 60px;
+    }
+
+    #Team_flex{
+        width: 900px;
+    }
+
+    .Team_elem{
+        width: 300px; 
+        margin-bottom: 35px;
+    }
+
+    .Team_elem div{
+        width: 230px;
+    }
+
+    #Case{
+        width: 860px; 
+        height: 700px; 
+        margin: auto; 
+        text-align: center; 
+        margin-bottom: 70px;
+    }
+
+    #Case_two_3 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_two{
+        width: 100%; 
+        height: 49%;
+        margin: auto;
+    }
+
+    #Case_two_1 img, #Case_two_2 img{
+        width: 100%; 
+        height: 100%;
+    }
+
+    #Case_two_3{
+        width: 100%;
+    }
+
+    #Case_one_2 img{
+        width: 100%; 
+        height:100%;
+    }
+
+    .br_2{
+        display: none;
+    }
+
+    #Case_one_1 div{
+        padding-top: 15px;
+        padding-left: 25px; 
+        width: 100%; 
+        margin-top: 15px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    #Case_one{
+        width: 100%; 
+        height: 49%; 
+        margin: auto; 
+        margin-bottom: 1%;
+    }
+
+    #Case h1{
+        margin-bottom: 45px;
+    }
+
+    #Case div {
+        margin-left: 5px;
+    }
+
+    #Case_one, #Case_two{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #Case_one_1 {
+        flex: 1;
+        border-radius: 5px 5px;
+    }
+
+    #Case_one_2 {
+        flex: 2;
+    }
+
+    #Case_two_3 img{
+        width: 100%;
+    }
+
+    #Case_two_1, #Case_two_2, #Case_two_3 {
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+    }
+
+    #Reviews {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        background: url(img/right-quote-sign.svg) no-repeat left top;
+        margin-bottom: 250px;
+    }
+
+    #Reviews h1 {
+        font-size: 40px;
+    }
+
+    #Prev_Next {
+        width: 250px;
+        margin-right: 8%;
+        margin-bottom: 50px;
+    }
+
+    #Prev_Next div {
+        margin: auto;
+        margin-top: 200px;
+    }
+
+    #_3 {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    #_1 {
+        width: 600px;
+        height: 27px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 203px;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        z-index: 4;
+        opacity: 0.2;
+        border: 1px solid black;
+    }
+
+    #_2 {
+        width: 700px;
+        height: 45px;
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 230px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 5;
+        opacity: 0.4;
+        border: 1px solid black;
+    }
+
+    #Com_1 {
+        text-align: center;
+        margin-top: 260px;
+        padding-top: 50px;
+        width: 800px;
+        height: 530px;
+        box-shadow: 0 0 50px rgb(69, 68, 68);
+        background: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 6;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #slider_three {
+        height: 500px;
+        width: 480px;
+        background: rgb(255, 255, 255);
+        margin-left: 8%;
+        margin-bottom: 50px;
+        border-right: 1px solid rgb(71, 71, 71);
+    }
+
+    #slider_three div {
+        font-size: 14px;
+    }
+
+    #Sliders_one_and_two {
+        height: 450px;
+    }
+
+    #Sliders_one_and_two p {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    #slider_one,
+    #slider_two {
+        overflow: hidden;
+        height: 120px;
+    }
+
+    #slider_one img,
+    #slider_two img {
+        border: 1px solid black;
+    }
+
+    #slider_one {
+        margin-bottom: 5px;
+    }
+
+    .Photo {
+        width: 250px;
+        height: 118px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    .Photo2 {
+        width: 250px;
+        height: 118px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    #FAQ {
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+
+    #FAQ h1 {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #FAQ ol {
+        margin: auto;
+        width: 700px;
+    }
+
+    #footer {
+        background: url(img/D-flying.svg) no-repeat top center, url(img/D-footer.svg) no-repeat bottom right, linear-gradient(to bottom right, rgb(4, 6, 19), rgb(29, 31, 43));
+        color: white;
+        width: 100%;
+        height: 85vh;
+        margin-top: 45px;
+        padding-top: 35px;
+        padding-bottom: 36px;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    #footer_1 {
+        display: flex;
+        justify-content:center;
+        border-bottom: 1px solid white;
+        width: calc(100%-30px);
+        height: 70vh;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    input,
+    textarea,
+    button {
+        margin-bottom: 7px;
+        border: 1px solid rgba(256, 256, 256, 0.3);
+        border-radius: 5px;
+        line-height: 1.2;
+        height: 36px;
+    }
+
+    #Project_info {
+        display: flex;
+        justify-content: left;
+        width: calc(100%-30px);
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 50px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    #Project_info img {
+        margin-right: 15px;
+        background-color: rgb(241, 77, 52);
+        height: 25px;
+        border-radius: 5px;
+    }
+
+    #Project_info div {
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 1vh;
+    }
+
+    #Messege {
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    #Label_1 {
+        margin-bottom: 20px;
+    }
+
+    #Label_2 {
+        padding-bottom: 45px;
+        font-size: small;
+    }
+
+    #Messege ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #Messege li {
+        list-style-type: none;
+    }
+
+    #img_1 {
+        width: 20px;
+    }
+
+    #img_2 {
+        height: 15px;
+    }
+
+    #Number_project {
+        font-size: 150%;
+    }
+
+    #Form_two {
+        width: 38%;
+        margin-top: 10px;
+    }
+
+    #Lete_1  {
+        width: 30vw; 
+        height: 44px;
+        font-size: 17px;
+        margin-bottom: 45px;
+    }
+
+    #form_1_name, #number_polz_1, #email_polz_1 {
+        width: calc(30vw - 40px);
+        font-size: 17px;
+        padding: 5px 20px;
+    }
+
+    #Form_two textarea {
+        width: calc(30vw - 40px);
+        resize: none;
+        height: 150px;
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    #Form_two label {
+        width: 38%;
+        font-size: 90%;
+    }
+
+    #Form_two button {
+        width: 30vw;
+        height: 45px;
+        margin-top: 7px;
+    }
+
+    #Check {
+        width: 30vw;
+    }
+
+    #Check br {
+        display: none;
+    }
+
+    #Checkbox {
+        margin-right: 10px;
+        float: left;
+    }
+
 
 }
 .menu {
@@ -282,9 +1242,6 @@ body {
 .exp_menu {
     margin-left: 5%;
     margin-top: -50px;
-}
-.exp_menu_mobile {
-    display: none;
 }
 .exp {
     border-left: 5px solid rgb(241,77,52);
@@ -456,5 +1413,50 @@ body {
 .List li::before{
     content: url(img/ok.png);
 }
-
+li{
+    margin-bottom: 15px;
+}
+details > summary {
+    list-style: none;
+  }
+details > summary::marker {
+    display: none;
+}
+#About-menu-mobile {
+    display: none;
+    padding-left: 30px;
+}
+.pod-support {
+    width: calc(25% - 3px);
+    height: 350px;  
+    border-radius: 1%;
+    margin-left: 3px;
+    padding-left: 15px;
+    border: .02px solid rgba(241, 241, 241, 0.705);
+    word-wrap: break-word;
+    overflow-y: hidden;
+}
+.pod-support > * {
+    width: calc(100% - 15px);
+    max-width: calc(100% - 15px);
+}
+#overlay_btn:hover, #Lete, #Lete_1 {
+    cursor: pointer;
+}
+h1 {
+    margin: 0;
+}
+#tarif {
+    width:200px;
+    height: 50px;
+    border: 2px solid rgb(241,77,52);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#Contacts{
+    transition: all .25s;
+}
 
